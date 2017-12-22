@@ -16,9 +16,9 @@
     (keyword x)))
 
 (defn write-value
-  [x]
+  [k v]
   (cond
-    (instance? java.util.UUID x) (str x)
-    (nil? x) nil
-    (keyword? x) (name x)
-    :else x))
+    (instance? java.util.UUID v) (str v)
+    (nil? v) nil
+    (keyword? v) (name v)
+    :else v))
