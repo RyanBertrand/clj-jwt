@@ -6,6 +6,7 @@
   [x]
   (cond
     (string? x) (str "\"" x "\"")
+    (instance? java.util.UUID x) (str x)
     :else (name x)))
 
 (defn read-key

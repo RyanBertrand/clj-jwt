@@ -1,8 +1,9 @@
-(defproject clj-jwt "0.1.1"
+(defproject clj-jwt "0.1.2"
   :description  "Clojure library for JSON Web Token(JWT)"
-  :url          "https://github.com/liquidz/clj-jwt"
+  :url          "https://github.com/RyanBertrand/clj-jwt"
   :license      {:name "Eclipse Public License"
                  :url "http://www.eclipse.org/legal/epl-v10.html"}
+  :deploy-repositories [["clojars" {:sign-releases false}]]
   :dependencies [[org.clojure/clojure "1.7.0"]
                  [org.clojure/data.json "0.2.6"]
                  [org.clojure/data.codec "0.1.0"]
