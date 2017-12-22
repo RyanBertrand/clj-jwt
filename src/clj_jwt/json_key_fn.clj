@@ -15,4 +15,10 @@
     (-> y first second)
     (keyword x)))
 
-
+(defn write-value
+  [x]
+  (cond
+    (instance? java.util.UUID x) (str x)
+    (nil? x) nil
+    (keyword? x) (name x)
+    :else x))

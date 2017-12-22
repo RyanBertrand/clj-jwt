@@ -1,4 +1,4 @@
-(defproject clj-jwt "0.1.2"
+(defproject ryanbertrand/clj-jwt "0.1.4"
   :description  "Clojure library for JSON Web Token(JWT)"
   :url          "https://github.com/RyanBertrand/clj-jwt"
   :license      {:name "Eclipse Public License"
